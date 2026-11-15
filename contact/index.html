@@ -123,7 +123,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link href="../assets/css/widget-divider.min.css" id="widget-divider-css" media="all" rel="stylesheet"/>
 <link href="../assets/css/widget-social-icons.min.css" id="widget-social-icons-css" media="all" rel="stylesheet"/>
 <link href="../assets/css/apple-webkit.min.css" id="e-apple-webkit-css" media="all" rel="stylesheet"/>
-<link href="../assets/css/post-354.css" id="elementor-post-354-css" media="all" rel="stylesheet"/>
+<link href="../assets/css/post-354.css?v=2.2" id="elementor-post-354-css" media="all" rel="stylesheet"/>
 <link href="../assets/css/roboto.css" id="elementor-gf-local-roboto-css" media="all" rel="stylesheet"/>
 <link href="../assets/css/robotoslab.css" id="elementor-gf-local-robotoslab-css" media="all" rel="stylesheet"/>
 <link href="../assets/css/fontawesome.min.css" id="elementor-icons-shared-0-css" media="all" rel="stylesheet"/>
@@ -393,14 +393,27 @@ EMAIL: abbisng@yahoo.com: info@abbibooks.com; nikeosad@yahoo.com<br/><br/>
 .abbi-contact-form-container {
     margin-top: 14px;
     font-family: 'Open Sans', sans-serif;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    flex: 1 1 100% !important;
+}
+#abbi-contact-form {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 }
 .abbi-form-row {
     display: flex;
     gap: 12px;
+    width: 100% !important;
+    box-sizing: border-box !important;
 }
 .abbi-form-group {
     margin-bottom: 12px;
     flex: 1;
+    width: 100% !important;
+    box-sizing: border-box !important;
 }
 .abbi-form-group label {
     display: block;
@@ -413,14 +426,15 @@ EMAIL: abbisng@yahoo.com: info@abbibooks.com; nikeosad@yahoo.com<br/><br/>
     color: #D90700;
 }
 .abbi-input {
-    width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
     padding: 9px 12px;
     font-size: 14px;
     font-family: inherit;
     border: 1px solid #d5d8dc;
     border-radius: 4px;
     background-color: #ffffff;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     transition: border-color 0.2s, box-shadow 0.2s;
     outline: none;
 }
@@ -429,10 +443,16 @@ EMAIL: abbisng@yahoo.com: info@abbibooks.com; nikeosad@yahoo.com<br/><br/>
     box-shadow: 0 0 0 3px rgba(239, 77, 72, 0.15);
 }
 textarea.abbi-input {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
     resize: vertical;
     min-height: 80px;
 }
 .abbi-security-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
     background: #f8f9fa;
     border: 1px solid #e2e8f0;
     border-radius: 4px;
@@ -450,6 +470,9 @@ textarea.abbi-input {
     padding: 6px 10px;
 }
 .abbi-submit-btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
     background-color: #EF4D48;
     color: #ffffff;
     border: none;
@@ -460,7 +483,7 @@ textarea.abbi-input {
     text-transform: uppercase;
     border-radius: 4px;
     cursor: pointer;
-    display: inline-flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s, transform 0.15s;
@@ -475,6 +498,8 @@ textarea.abbi-input {
     transform: none;
 }
 .abbi-alert {
+    width: 100% !important;
+    box-sizing: border-box !important;
     padding: 10px 14px;
     border-radius: 4px;
     margin-bottom: 12px;
@@ -492,20 +517,41 @@ textarea.abbi-input {
     color: #9b1c1c;
     border: 1px solid #f8b4b4;
 }
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+    .elementor-column.elementor-element-46eb463,
+    .elementor-element.elementor-element-46eb463,
+    .elementor-element.elementor-element-46eb463 > .elementor-widget-wrap,
+    .elementor-element.elementor-element-46eb463 > .elementor-element-populated,
+    .elementor-element.elementor-element-46eb463 .elementor-widget,
+    .elementor-element.elementor-element-46eb463 .elementor-widget-container,
+    .abbi-contact-form-container,
+    #abbi-contact-form {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        box-sizing: border-box !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     .abbi-form-row {
-        flex-direction: column;
-        gap: 0;
+        flex-direction: column !important;
+        gap: 0 !important;
     }
     .abbi-submit-btn {
-        width: 100%;
-        padding: 12px 20px;
+        width: 100% !important;
+        padding: 12px 20px !important;
     }
     .abbi-input {
-        font-size: 16px;
+        font-size: 16px !important;
     }
     .abbi-security-inner {
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
+    }
+}
+@media (min-width: 1025px) {
+    .abbi-submit-btn {
+        width: auto !important;
+        display: inline-flex !important;
     }
 }
 </style>
