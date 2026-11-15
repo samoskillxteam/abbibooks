@@ -18,7 +18,7 @@
 
   /* Main Contact Section & Column Stacking */
   .elementor-354 .elementor-element.elementor-element-f4f652f {
-    padding: 24px 16px 40px 16px !important;
+    padding: 20px 16px 15px 16px !important;
   }
   .elementor-354 .elementor-element.elementor-element-f4f652f > .elementor-container {
     display: flex !important;
@@ -26,7 +26,7 @@
     flex-wrap: wrap !important;
     width: 100% !important;
     max-width: 100% !important;
-    gap: 28px !important;
+    gap: 16px !important;
   }
 
   /* Column 1: Address & Email details */
@@ -86,7 +86,10 @@
   }
   .elementor-354 .elementor-element.elementor-element-646ce97 .elementor-widget-container {
     text-align: center !important;
-    padding: 10px 0 !important;
+    padding: 0 !important;
+  }
+  .elementor-354 .elementor-element.elementor-element-646ce97 {
+    margin: 0 !important;
   }
   .elementor-354 .elementor-element.elementor-element-646ce97 .elementor-social-icons-wrapper {
     justify-content: center !important;
@@ -95,7 +98,7 @@
   /* Book Review Section */
   .elementor-354 .elementor-element.elementor-element-9a3ead5 {
     margin-bottom: 0 !important;
-    padding: 40px 16px !important;
+    padding: 28px 16px !important;
   }
   .elementor-354 .elementor-element.elementor-element-9a3ead5 > .elementor-container {
     display: flex !important;
